@@ -1,0 +1,10 @@
+tabs
+	tab(name='FlexChart', :selected='true')
+		wj-flex-chart(:items-source='chartData', binding-x='item')
+		wj-flex-chart-series(name='bar1', binding='bar1')
+		wj-flex-chart-series(name='bar2', binding='bar2')
+		wj-flex-chart-series(name='bar3', binding='bar3')
+	
+	tab(name='FlexGrid')
+		wj-flex-grid(:items-source='gridData')
+	

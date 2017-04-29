@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Wijmo &amp; Vue2</title>
+    <link href="./css/app.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container" id="app">
+      <tabs>
+        <tab name="FlexChart" :selected="true">
+          <wj-flex-chart :items-source="chartData" binding-x="item"></wj-flex-chart>
+          <wj-flex-chart-series name="bar1" binding="bar1"></wj-flex-chart-series>
+          <wj-flex-chart-series name="bar2" binding="bar2"></wj-flex-chart-series>
+          <wj-flex-chart-series name="bar3" binding="bar3"></wj-flex-chart-series>
+        </tab>
+        <tab name="FlexGrid">
+          <wj-flex-grid :items-source="gridData"></wj-flex-grid>
+        </tab>
+      </tabs>
+    </div>
+    <script src="./js/vendor.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
